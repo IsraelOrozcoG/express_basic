@@ -25,6 +25,10 @@ app.get('/explorersinNode',(req,res)=>{
     res.send(explorer)
 })
 
+app.get('/explorers/:explorerName',(req,res) => {
+    res.send(req.params)
+})
+
 app.listen(port, () =>{
     console.log(`Example app listening on port ${port}`)
 })
